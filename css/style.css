@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+body {
+    font-size: 12px;
+    color: #333;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    opacity: 0.7;
+}
+.a {
+    opacity: 0;
+}
+
+.inner {
+    margin: 0 100px;
+}
+
+/* header */
+
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(217,217,217,0.5) ;
+    height: 80px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.header .logo .logo-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+.header .menu {
+    display: flex;
+    height: 20px;
+    
+}
+
+.header .menu .page-link ul {
+    display: flex;
+    padding-right: 20px;
+    border-right: #333 solid 1px;
+    height: 20px;
+    line-height: 20px;
+}
+.header .menu .page-link ul li {
+    display: flex;
+    padding-left: 20px;
+    
+}
+.header .menu .sns-link ul {
+    display: flex;
+    
+}
+
+.header .menu .sns-link ul li {
+    width: 20px;
+    padding-left: 20px
+}
+
+/* home */
+.home-content {
+    padding: 20px 10px 30px 10px;
+    border-radius: 3%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40%;
+    background: rgba(217,217,217,0.8) ;
+    max-width: 500px
+}
+
+.home-content .page-title {
+    font-size: 48px;
+    font-family: 'Philosoher', serif;
+    text-transform: none;
+}
+.home-content .page-p {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 25px 0;
+}
+.home-content .page-p hr{
+    width: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top: #333 1px solid;
+    border-bottom: none;
+    
+}
+
+.home-content .button {
+    font-weight: bold;
+    background: rgba(39, 39, 40, 1);
+    color: #ffff;
+    border-radius: 10%;
+    padding: 15px 20px;
+}
+
+/* 大きな背景 */
+
+.big-bg {
+    background-size: cover;
+    background-position:  center top;
+    background-repeat: no-repeat;
+}
+
+#home {
+    background-image: url(../img/mainvisual.jpg);
+    min-height: 100vh;
+}
+
+/* ABOUT */
+#about {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+#about .section-title {
+    display: table;
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(transparent 60%, #bcbcbd 60%);
+    margin: 0 auto 50px auto;
+}
+#about .my-about {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+#about .my-about .my-img{
+    width: 40%;
+}
+
+#about .my-about .my-text{
+    width: 50%;
+    font-size: 20px;
+    line-height: 1.0;
+    
+}
+#about .my-about .my-text .text-position{
+    margin: 10% 0 10% 0;
+}
+
+#about .my-about .my-text p{
+    margin-bottom: 25px;
+}
+#about .my-about .my-text p span{
+    font-weight: bold;
+}
+
+#about .my-skill h4 {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-top: #333 solid 1px;
+    border-bottom: #333 solid 1px;
+    text-align: center;
+}
+#about .my-skill .skill {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#about .my-skill .skill img {
+    width: 150px;
+    height: 150px;
+}
+#about .my-skill .skill p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    font-size: 10px;
+    text-align: center;
+    background: #333;
+    color: #d2d2d6;
+    padding: 10px;
+}
+
+
+/* BLOG */
+
+
+
+@media screen and (max-width:800px) {
+    .header {
+        padding: 10px 25px;
+        height: 50px;
+    }
+
+    .inner {
+        margin: 0 50px;
+    }
+    .header .menu {
+        flex-direction: column;
+        height: 50px;
+    }
+    
+    .header .menu .page-link ul {
+        border-right: none;
+        border-bottom: #333 solid 1px;
+        padding-left: none;
+    }
+    .header .menu .sns-link ul li {
+        width: 20px;
+        padding-top: 5px;
+        padding-left: 35px
+    }
+
+    .home-content {
+        margin-top: 20%;
+        padding: 20px 10px 30px 10px;
+        max-width: 300px
+    }
+    
+    .home-content .page-title {
+        font-size: 40px;
+        line-height: 1.5;
+    }
+    .home-content .page-p {
+        font-size: 20px;
+        margin: 0 0 25px 0;
+    }
+    .home-content .page-p hr{
+        width: 10px;
+        
+    }
+
+    #home {
+        min-height: 50vh;
+    }
+    
+    #about .my-about {
+        flex-direction: column;
+    }
+    #about .my-about .my-img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #about .my-about .my-text{
+        width: 100%;
+    }
+}
+
+
+
+
+
